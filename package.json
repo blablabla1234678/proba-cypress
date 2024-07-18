@@ -1,0 +1,12 @@
+{
+  "scripts": {
+    "test": "npm run db:reset & npm run cypress:run",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "db:reset": "cd C:/Users/felhasznalo/Desktop/Laravel/proba & php artisan migrate:refresh",
+    "server:run": "cd C:/Users/felhasznalo/Desktop/Laravel/proba & php artisan serve"
+  },
+  "devDependencies": {
+    "cypress": "^13.13.1"
+  }
+}
