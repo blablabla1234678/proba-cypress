@@ -2,7 +2,8 @@ import data from '../fixtures/users.json';
 
 describe('users', () => {
     it('can create and list users', () => {
-        for (let name in data)
+		const names = ['user1', 'user1b', 'user2'];
+		for (let name of names)
             cy.then(() => cy.request('POST', 'users', data[name]))
                 .then((response) => null);
         
